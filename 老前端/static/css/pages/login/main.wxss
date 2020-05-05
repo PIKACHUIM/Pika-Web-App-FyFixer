@@ -1,0 +1,2 @@
+@import "/static/css/vendor.wxss";
+.banner{width:100%;position:absolute;top:50rpx}.inline{display:flex}

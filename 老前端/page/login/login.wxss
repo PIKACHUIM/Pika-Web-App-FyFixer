@@ -1,0 +1,74 @@
+Page {
+  height: 100%;
+  background: url("http://ptest.52pika.iego.net/api/images/backgroud.jpg") no-repeat;
+  background-size: cover;
+}
+
+#login_user {
+  background: url("http://ptest.52pika.iego.net/api/images/phonenum.png") 20px 14px no-repeat !important;
+}
+
+#login_pass {
+  background: url("http://ptest.52pika.iego.net/api/images/password.png") 23px 11px no-repeat !important;
+}
+
+.login_dowe {
+  position: absolute;
+  width: 90%;
+  height: 60%;
+  margin: 5% 0 0 5%;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+
+.login_logo {
+  width: 104px;
+  height: 104px;
+  margin: 0% auto 0 33%;
+}
+
+.login_getc{
+  position: relative !important;
+  float: right !important;
+  background-color: transparent !important;
+  top:-40px;
+  left:-5px;
+}
+
+.login_text{
+  margin: 5% 5% auto auto;
+  color: #fff;
+}
+.login_form {
+  position: relative;
+  margin: 15% auto auto 10%;
+  border: 1px solid #fff;
+  border-radius: 25px;
+  width: 240px;
+  background-color: transparent;
+}
+
+.login_form input {
+  height: 48px;
+  width: 120px;
+  padding-left: 70px;
+  border-radius: 25px;
+  font-size: 18px;
+  color: #fff;
+  background-color: transparent;
+}
+
+.login_form button {
+  width: 64px;
+  height: 32px;
+  margin: 0% auto auto auto;
+  border: 1px solid #fff;
+  border-radius: 25px;
+  font-size: 12px;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+}

@@ -1,0 +1,2 @@
+@import "/static/css/vendor.wxss";
+.blue{color:#65b2e9}.gray{color:#b2b2b2}

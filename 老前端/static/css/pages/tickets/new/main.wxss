@@ -1,0 +1,2 @@
+@import "/static/css/vendor.wxss";
+.inline.data-v-4a319b7f{display:flex;margin:-.6em 0}.inline-btn.data-v-4a319b7f{width:30%}.radio.data-v-4a319b7f{display:inline-block;font-size:40rpx;width:100%}.radio-group.data-v-4a319b7f{padding:10rpx 0;line-height:2.5}

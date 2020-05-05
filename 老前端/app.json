@@ -1,0 +1,32 @@
+{
+  "pages": [
+    "page/start/start",
+    "page/index/index",
+    "page/order/order",
+    "page/login/login"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#00BFFF",
+    "navigationBarTitleText": "飞扬维修",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "page/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "page/order/order",
+        "text": "订单"
+      }
+    ]
+  },
+    "plugins": {
+      "captcha": {
+        "version": "1.2.4",
+        "provider": "wxbf8483dfc5ac6817"
+      }
+    }
+}

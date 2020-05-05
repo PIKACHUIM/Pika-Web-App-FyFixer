@@ -1,0 +1,24 @@
+<view class="start_cont_main">
+  <view class="start_remi_imgs" wx:if="{{remind}}">
+    <image class="start_remi_imgs" src="/imgs/start/loading.gif"></image>
+  </view>
+  <block wx:else>
+    <image class="start_titl_bigs" src="/imgs/start/title8.png"></image>
+    <view  class="start_cont_extl">
+      <view class="start_hd" style="transform:rotateZ({{angle}}deg);">
+        <image class="start_wave"               src="/imgs/start/wave.png" mode="aspectFill"></image>
+        <image class="start_wave start_wave-bg" src="/imgs/start/wave.png" mode="aspectFill"></image>
+      </view>
+      <view class="start_bd">
+        <text     class="start_notice_title">维修须知</text>
+        <view     class="start_text_main" onLoad="getNotice()" id='v1'>{{NoticeText}}</view>
+        <textarea class="start_notice_datas">       </textarea>
+        <text     class="start_notice_warns">点击“登录”表示你已阅读并同意以上内容</text>
+        <view     class="start_botton_conf"bindtap='goToIndex'>
+          <text>登录</text>
+        </view>
+        <text class="start_copy">©2020 飞扬俱乐部</text>
+      </view>
+    </view>
+  </block>
+</view>

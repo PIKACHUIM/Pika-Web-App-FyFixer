@@ -1,0 +1,18 @@
+<image class='login_logo' src='../../imgs/login/logob.png'></image>
+<text class='login_text'>飞扬维修</text>
+<view class="login_dowe">
+  <view class='login_form'>
+    <input id='login_user' placeholder='手机号'></input>
+  </view>
+  <view class='login_form'>
+    <input id='login_pass' placeholder='验证码'></input>
+    <oneclick class='login_getc' bindsuccess='captchaSuccess' bindhide='captchaHide' oneclickReload='{{captchaReload}}' captchaShow='{{captchaShow}}' options='{{options}}'></oneclick>
+      <button class='login_getc' bindtap='getCode' disabled='{{cdd}}'>获取</button>
+    
+
+  </view>
+  <view>
+
+    <button class='login_form' bindtap='login'>登陆</button>
+  </view>
+</view>

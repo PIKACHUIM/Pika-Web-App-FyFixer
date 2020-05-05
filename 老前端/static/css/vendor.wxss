@@ -1,0 +1,49 @@
+.weui-cell_textarea {
+  background: #fff;
+  padding: 0;
+  transition: all 0.15s;
+  border-bottom: 4rpx solid #e0e0e0;
+}
+
+.weui-cell_textarea.focus {
+  border-bottom-color: #65b2e9;
+}
+
+.weui-panel-content {
+  position: relative;
+}
+
+.weui-textarea {
+  min-height: 80rpx;
+  line-height: 2.5;
+  font-size: 40rpx;
+}
+
+.weui-textarea-placeholder {
+  position: absolute;
+  text-align: center;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  height: 40rpx;
+  color: silver;
+  font-size: 28rpx;
+}
+
+.inline {
+  display: flex;
+}
+
+#vipIcon {
+  width: 94rpx;
+  height: 80rpx;
+  display: inline-block;
+  margin-bottom: -30rpx;
+}
+
+.bottomBlock {
+  display: inline-block;
+  padding: 20rpx 35rpx;
+}
