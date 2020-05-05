@@ -17,11 +17,11 @@
 		</view>
 		<view><text class="loginfont">小程序登录</text></view>
 		<view class="cu-form-group">
-			<input class="telnum" placeholder="手机号" type='text' bindinput="getPhoneValue" value="{{phone}}"></input>
+			<input class="telnum" placeholder="手机号" type='text' bindinput="getPhoneValue" value="{{loginDataPnum}}"></input>
 		</view>
 		<view class="varityblock" style="  justify-content: space-between">
-			<input class="telnum" placeholder="验证码" style="width:250rpx" bindinput="getCodeValue" value="{{code}}"></input>
-			<button class="cu-btn buttoncommon" style="width:200rpx" bindtap="getVerificationCode" disabled="{{disabled}}">{{codename}}</button>
+			<input class="telnum" placeholder="验证码" style="width:250rpx" bindinput="getCodeValue" value="{{loginDataCode}}"></input>
+			<button class="cu-btn buttoncommon" style="width:200rpx" bindtap="getVerificationCode" disabled="{{disabled}}">{{loginNameCode}}</button>
 		</view>
 		<view class="varityblock">
 			<button class="cu-btn buttoncommon" style="width:300rpx" bindtap="login_btn">登录</button>

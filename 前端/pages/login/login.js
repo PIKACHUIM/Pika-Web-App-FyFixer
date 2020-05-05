@@ -1,20 +1,16 @@
-// pages/login/login.js
 Page({
 
-  /**
-   * 页面的初始数据
-   */
+  /*页面的初始数据*/
   data: {
-    phone:'',
-    code:'',
+    loginDataPnum:'',
+    loginDataCode:'',
     iscode:null,
-    codename:'获取'
+    loginNameCode:'获取'
   },
-  
   //获取input输入框的值
-  getPhoneValue:function(e) {
+  loginGetPhoneValue:function(e) {
     this.setData({
-      phone:e.detail.value
+      loginDataPnum:e.detail.value
     })
   },
   getCodeValue:function(e) {
@@ -23,10 +19,10 @@ Page({
     })
   },
   getCode:function() {
-    var a = this.data.phone;
+    var a = this.data.loginDataPnum;
     var _this = this;
     var myphone = /^(13[0-9]|14[0-9]|15[0-9]|16[0-9]|17[0-9]|18[0-9]|19[0-9])\d{8}$/
-    if (this.data.phone == '') {
+    if (this.data.loginDataPnum == '') {
       wx.showToast({
         title: '手机号不能为空',
         icon:'none',
@@ -34,7 +30,7 @@ Page({
       })
       return false;
     }
-    else if (!myphone.test(this.data.phone)) {
+    else if (!myphone.test(this.data.loginDataPnum)) {
       wx.showToast({
         title: '请输入正确的手机号',
         icon:'none',
@@ -82,7 +78,7 @@ Page({
   //登录
   login_btn:function() {
     var myphone = /^(13[0-9]|14[0-9]|15[0-9]|16[0-9]|17[0-9]|18[0-9]|19[0-9])\d{8}$/
-    if (this.data.phone == '') {
+    if (this.data.loginDataPnum == '') {
       wx.showToast({
         title: '手机号不能为空',
         icon:'none',
@@ -90,7 +86,7 @@ Page({
       })
       return false;
     }
-    else if (!myphone.test(this.data.phone)) {
+    else if (!myphone.test(this.data.loginDataPnum)) {
       wx.showToast({
         title: '请输入正确的手机号',
         icon:'none',
@@ -98,7 +94,7 @@ Page({
       })
       return false;
     }
-    if (this.data.code == '') {
+    if (this.data.loginDataCode == '') {
       wx.showToast({
         title: '验证码不能为空',
         icon:'none',
@@ -107,7 +103,7 @@ Page({
       return false;
     }
     else {
-      wx.setStorageSync('phone', this.data.phone);
+      wx.setStorageSync('phone', this.data.loginDataPnum);
       wx.switchTab({
         url: '/pages/fixerempty/fixerempty',
       })
@@ -128,55 +124,5 @@ Page({
 
   },
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-      wx.hideHomeButton({
-        success:function() {
-          console.log('hidehomebutton:success');
-        },
-        fail:function() {
-          console.log('hidehomebutton:fail');
-        },
-        complete:function() {
-          console.log('hidehomebutton:complete');
-        },
-      })
-  },
 
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
-  }
 })

@@ -1,0 +1,18 @@
+    /*
+
+
+    "pages/orderdetail/orderdetail",
+    "pages/historydetail/historydetail",
+    "pages/fixform/fixform",
+    "pages/personinfo/personinfo",
+
+    "pages/searchdetail/searchdetail",
+    "pages/writeanswer/writeanswer",
+    "pages/history/history",
+    "pages/fixdetail/fixdetail",
+    "pages/button/button",
+    "pages/question/question",
+    "pages/program/program",
+    "pages/ask/ask",
+    "pages/answer/answer"
+    */
