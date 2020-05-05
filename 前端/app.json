@@ -1,0 +1,58 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/login/login",
+    "pages/about/about",
+    "pages/orderdetail/orderdetail",
+    "pages/historydetail/historydetail",
+    "pages/fixform/fixform",
+    "pages/personinfo/personinfo",
+    "pages/search/search",
+    "pages/welcome/welcome",
+    "pages/searchdetail/searchdetail",
+    "pages/writeanswer/writeanswer",
+    "pages/history/history",
+    "pages/fixdetail/fixdetail",
+    "pages/button/button",
+    "pages/index/index",
+    "pages/question/question",
+    "pages/program/program",
+    "pages/ask/ask",
+    "pages/answer/answer"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#00A5FF",
+    "navigationBarTitleText": "小川电脑医生",
+    "navigationStyle": "default",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#10aafe",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "/static/images/home_1.png",
+        "selectedIconPath": "/static/images/home.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "搜索",
+        "iconPath": "/static/images/search_1.png",
+        "selectedIconPath": "/static/images/search.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "我的",
+        "iconPath": "/static/images/user_1.png",
+        "selectedIconPath": "/static/images/user.png"
+      }
+    ]
+  },
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom"
+  },
+  "sitemapLocation": "sitemap.json"
+}

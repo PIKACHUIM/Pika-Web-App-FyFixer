@@ -1,0 +1,25 @@
+.loginfont {
+  font-family: SimSun;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 27px;
+  text-align: center;
+  color: #00A5FF;
+  border: 2px solid #FFFFFF;
+}
+
+.telnum {
+  width: 480rpx;
+  height: 76rpx;
+  background: #F5F6F6;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.varityblock {
+  display: flex;
+  justify-content: space-around;
+  width: 480rpx;
+  height: 76rpx;
+}

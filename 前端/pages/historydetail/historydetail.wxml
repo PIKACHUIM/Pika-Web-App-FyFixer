@@ -1,0 +1,89 @@
+<!--pages/historydetail/historydetail.wxml-->
+<view class="garybc">
+	<view class="bluecard" style="height:200rpx">
+		<view>
+			<image src="../../static/images/wave_2.png" mode="widthFix" class="wave"></image>
+		</view>
+		<view>
+			<image src="../../static/images/wave_1.png" mode="widthFix" class="wave"></image>
+		</view>
+		<view>
+			<image src="../../static/images/wave_3.png" mode="widthFix" class="wave1"></image>
+		</view>
+	</view>
+
+	<!-- 白色卡片 -->
+	<view class="whitecard1">
+		<view class="fyicon">
+			<image src="../../static/images/logo.png" mode="widthFix"></image>
+		</view>
+
+		<!-- 以下是输入框 -->
+    <!-- <view class="cu-form-group inputarea">
+			<view class="title cu-tag bg-cyan radius ">技术员姓名</view>
+			<view class="text">杰尼龟</view>
+		</view> -->
+		<view class="cu-form-group inputarea">
+			<view class="title cu-tag bg-cyan radius ">用户姓名</view>
+			<view class="text">杰尼龟</view>
+		</view>
+		<view class="cu-form-group inputarea">
+			<view class="title cu-tag bg-cyan radius ">联系电话</view>
+			<view class="text">{{phone}}</view>
+			<button class="cu-btn cuIcon-copy copybtn" bindtap="copy" data-text="{{phone}}"></button>
+		</view>
+		<view class="cu-form-group inputarea">
+			<view class="title cu-tag bg-cyan radius">QQ号</view>
+			<view class="text">{{QQ}}</view>
+			<button class="cu-btn cuIcon-copy copybtn" bindtap="copy" data-text="{{QQ}}"></button>
+		</view>
+		<view class="cu-form-group inputarea">
+			<view class="title cu-tag bg-cyan radius">设备类型</view>
+			<view class="text">平板</view>
+		</view>
+		<view class="cu-form-group inputarea">
+			<view class="title cu-tag bg-cyan radius">品牌</view>
+			<view class="text">联想</view>
+		</view>
+		<view class="cu-form-group inputarea">
+			<view class="title cu-tag bg-cyan radius">系列</view>
+			<view class="text">1212</view>
+		</view>
+		<view class="cu-form-group inputarea">
+			<view class="title cu-tag bg-cyan radius">型号</view>
+			<view class="text">G11</view>
+		</view>
+		<view class="cu-form-group inputarea">
+			<view class="title cu-tag bg-cyan radius">购买日期</view>
+			<view class="text">1990-12-01</view>
+		</view>
+		<view class="cu-form-group inputarea">
+			<view class="title cu-tag bg-cyan radius">保修状态</view>
+			<view class="text">未过保</view>
+		</view>
+		<view class="cu-form-group inputarea">
+			<view class="title cu-tag bg-cyan radius">报修时间</view>
+			<view class="text">2020-4-7</view>
+		</view>
+    <view class="cu-form-group inputarea">
+			<view class="title cu-tag bg-cyan radius">订单状况</view>
+			<view class="text">维修完成</view>
+		</view>
+    <view class="cu-form-group inputarea">
+			<view class="title cu-tag bg-cyan radius">完成时间</view>
+			<view class="text">2020-4-18</view>
+		</view>
+	<view class="cu-form-group inputarea colcenter">
+		<view style="width:100%">	<view class="title cu-tag bg-cyan radius"  style="width:30%">设备问题</view></view>
+			<view class="text1">联想联想联想联想联想联想联想联想联想联想联想联想联想联想联想联想联想联想联想联想联想联想联想联想联想联想联想联想联想联想联想联想联想联想联想联想联想联想联想联想联想联想联想联想联想联想联想联想联想联想联想</view>
+		</view>
+
+
+	<swiper class="swipercontainer"   current="1" indicator-dots="true" duration="500" bindchange="cardSwiper" indicator-color="#8799a3" indicator-active-color="#0081ff">
+  <swiper-item wx:for="{{swiperList}}" style="width:100%" class="rowcenter">
+    <image src="{{item.url}}" mode="widthFix" wx:if="{{item.type=='image'}}" style="width；100%"></image>
+  </swiper-item>
+</swiper>
+
+	</view>
+</view>

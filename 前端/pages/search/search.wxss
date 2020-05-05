@@ -1,0 +1,133 @@
+/* pages/search/search.wxss */
+.whitecard_search {
+  display: flex;
+  flex-direction: column;
+  padding: 44rpx 8rpx;
+  justify-content: space-around;
+  align-items: left;
+  position: absolute;
+  left: 25rpx;
+  top: 20rpx;
+  width: 500rpx;
+  height: 120rpx;
+  background: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 14px;
+}
+
+.whitecard1 {
+  display: flex;
+  flex-direction: column;
+  padding: 44rpx 0rpx;
+  justify-content: start;
+  align-items: center;
+  position: absolute;
+  top: 170rpx;
+  width: 750rpx;
+  min-height: 50vh;
+  background: #FFFFFF;
+  border-radius: 25px;
+}
+
+.list {
+  margin-top: 5rpx;
+  width: 100%;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.22);
+}
+
+.btn {
+  background: linear-gradient(90deg, #4791FA 7.73%, rgba(20, 206, 247, 0.67) 115%), #FFFFFF;
+  border-radius: 25px;
+  border: 1px solid #26E4CE;
+  box-sizing: border-box;
+  font-family: SimHei;
+  height: 75rpx;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36rpx;
+  line-height: 42rpx;
+  text-align: center;
+  color: #FFFFFF;
+  box-shadow: 0px 0px 10px rgba(88, 208, 249, 0.39);
+}
+
+.btn1 {
+  height: 75rpx;
+  background: #dfe4ea;
+  border-radius: 25px;
+  font-family: SimHei;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36rpx;
+  line-height: 42rpx;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  color: rgba(0, 0, 0, 0.49);
+}
+
+.listcard {
+  width: 100%;
+  height: 280rpx;
+
+  padding-bottom: 10rpx;
+  margin-bottom: 20rpx;
+}
+
+.button_question {
+  margin-top: 25rpx;
+  margin-left: 560rpx;
+  width: 150rpx;
+  height: 110rpx;
+  color: #10aafe;
+  font-size: 40rpx;
+}
+
+.tag {
+  box-shadow: 0rpx 0rpx 30rpx rgba(63, 245, 132, 0.89);
+  color: #81f581;
+}
+
+.tec {
+  box-shadow: 0rpx 0rpx 30rpx rgba(248, 229, 59, 0.89);
+  color: #fff200;
+}
+
+.inputarea {
+  width: 80%;
+  background: #F5F6F6;
+  border-radius: 15px;
+}
+
+.search-btn {
+  height: 100rpx;
+  border-radius: 50%;
+
+  color: white;
+
+}
+
+.cardright {
+  width: 70%;
+  height: 100%;
+  padding: 10rpx;
+  border-top-right-radius:15px ;
+  border-bottom-right-radius: 15px;
+
+}
+.cardleft {
+  width: 30%;
+  height: 100%;
+  padding: 10rpx;
+  border-top-left-radius:15px ;
+  border-bottom-left-radius: 15px;
+  background: #f1f2f6;
+
+}

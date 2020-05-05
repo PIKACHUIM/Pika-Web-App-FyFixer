@@ -1,0 +1,349 @@
+/* pages/home/home.wxss */
+/* 技术员空闲状态 */
+.whitecard1 {
+  display: flex;
+  flex-direction: column;
+  padding: 44rpx 44rpx;
+  justify-content: start;
+  align-items: center;
+  position: absolute;
+  top: 90rpx;
+  width: 750rpx;
+  min-height: 100vh;
+  background: #FFFFFF;
+  border-radius: 25px;
+}
+
+.list {
+  margin-top: 25rpx;
+  width: 100%;
+}
+
+.card {
+  width: 100%;
+  height: 70%;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.22);
+}
+
+.btn {
+  background: linear-gradient(90deg, #4791FA 7.73%, rgba(20, 206, 247, 0.67) 115%), #FFFFFF;
+  border-radius: 25px;
+  border: 1px solid #26E4CE;
+  box-sizing: border-box;
+  font-family: SimHei;
+  height: 75rpx;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36rpx;
+  line-height: 42rpx;
+  text-align: center;
+  color: #FFFFFF;
+  box-shadow: 0px 0px 10px rgba(88, 208, 249, 0.39);
+}
+
+.btn1 {
+  height: 75rpx;
+  background: #dfe4ea;
+  border-radius: 25px;
+  font-family: SimHei;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36rpx;
+  line-height: 42rpx;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  color: rgba(0, 0, 0, 0.49);
+}
+
+.listcard {
+  width: 100%;
+  height: 400rpx;
+  margin-top: 25rpx;
+  padding-bottom: 10rpx;
+}
+
+.tag{
+  width: 150rpx;
+}
+
+.itemcard {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  width: 650rpx;
+  height: 480rpx;
+  background: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 14px;
+  margin: 5rpx;
+}
+.itemcard2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 25rpx;
+  width: 650rpx;
+  height: 480rpx;
+  background: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 14px;
+}
+
+/* 技术员已接单及用户已被接单状态 */
+.fixing_whitecard {
+  display: flex;
+  flex-direction: column;
+  padding: 44rpx 62rpx;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  left: 30rpx;
+  top: 150rpx;
+  width: 690rpx;
+  height: 460rpx;
+  background: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 14px;
+}
+
+.fixericon {
+  position: absolute;
+  top: -120rpx;
+  height: 200rpx;
+  width: 200rpx;
+  border-radius: 25px;
+}
+
+.textFixer {
+  position: absolute;
+  top: 25rpx;
+  left: 25rpx;
+  font-family: SimHei;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36rpx;
+  line-height: 42rpx;
+  text-align: center;
+  color: #000000;
+}
+
+.fixerName {
+
+  text-align: center;
+  font-family: SimHei;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 60rpx;
+  line-height: 70rpx;
+  text-align: center;
+  color: #000000;
+}
+
+.connectionbox {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.connectionbox1 {
+  height: 200rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.telandqq {
+  font-family: SimHei;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #000000;
+}
+
+.number {
+  font-family: SimHei;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.47);
+}
+
+.swipercontainer {
+  position: absolute;
+  top: 635rpx;
+  width: 750rpx;
+  height: 540rpx;
+}
+
+.stepline {
+  display: flex;
+  flex-direction: column;
+  padding: 44rpx 62rpx;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.center {
+  text-align: center;
+}
+
+.itemcard1 {
+  display: flex;
+  flex-direction: column;
+  padding: 25rpx;
+  justify-content: center;
+  align-items: center;
+  width: 375rpx;
+  height: 480rpx;
+}
+
+.detail {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin-bottom: 10rpx;
+}
+
+.bg {
+  background: #f5f6fa;
+  box-sizing: border-box;
+  font-family: SimHei;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.49);
+}
+
+.title {
+  height: 45rpx;
+  margin-bottom: 10rpx;
+}
+
+.bottombtn {
+  position: absolute;
+  top: 1220rpx;
+  width: 100%;
+  height: 200rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10rpx;
+}
+
+.ok {
+  font-family: SimHei;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.49);
+  width: 600rpx;
+  height: 75rpx;
+  background: linear-gradient(180.73deg, #55F381 4.47%, rgba(50, 210, 114, 0.72) 47.27%, rgba(58, 228, 43, 0.87) 95.78%);
+  box-shadow: 0px 4px 15px rgba(147, 227, 109, 0.93);
+  border-radius: 7px;
+}
+
+.withdraw {
+  font-family: SimHei;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.49);
+  height: 75rpx;
+  width: 600rpx;
+  background: linear-gradient(180deg, rgba(241, 29, 29, 0.84) 0%, rgba(241, 93, 29, 0.6132) 51.56%, rgba(241, 29, 29, 0.6132) 100%);
+  border-radius: 7px;
+  box-shadow: 0px 4px 10px rgba(225, 103, 103, 0.88);
+}
+
+.fixing_btn {
+  
+  width: 90%;
+  height: 80rpx;
+  font-family: SimHei;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF;
+  border-radius: 18px;
+}
+.success{
+  background: linear-gradient(90deg, #4791FA 7.73%, rgba(20, 206, 247, 0.67) 115%), #FFFFFF;
+}
+/* 用户空闲状态及
+等待状态 */
+.userempty_whitecard{
+  display: flex;
+  flex-direction: column;
+  padding: 44rpx 62rpx;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  top: 100rpx;
+  width: 100vw;
+  height: 100vh;
+  background: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 25px 25px 0 0;
+  }
+
+.userempty_btn{
+  width: 80%;
+  height: 70rpx;
+  border-radius: 7px;
+}
+.scroll-wrap {
+  min-width: 100%;
+  height: 360rpx;
+  white-space: nowrap; /*不可缺少*/
+}
+.scroll-view-item {
+ width: 68%;
+  height: 360rpx;
+  display: inline-block;
+}
+.scroll-view-item + .scroll-view-item {
+  margin-left: 16rpx;
+}
+::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+    color: transparent;
+}
+ .scroll-img-wrap {
+  width: 100%;
+  height: 280rpx;
+  overflow: hidden;
+  border-radius: 8rpx;
+}
+.scroll-title {
+   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+}
+.scroll-major-img-wrap {
+  height: 280rpx;
+}

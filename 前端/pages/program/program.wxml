@@ -1,0 +1,35 @@
+<view class="garybc">
+	<view class="bluecard" style="height:170rpx">
+		<view>
+			<image src="../../static/images/wave_2.png" mode="widthFix" class="wave"></image>
+		</view>
+		<view>
+			<image src="../../static/images/wave_1.png" mode="widthFix" class="wave"></image>
+		</view>
+		<view>
+			<image src="../../static/images/wave_3.png" mode="widthFix" class="wave1"></image>
+		</view>
+
+	</view>
+	<view class="whitecard" style="top:80rpx">
+		<view>
+			<text class="blackfont2" >关于小程序</text>
+		</view>
+		<view class="cu-form-group">
+			1、在内部测试中，我们发现 离线存储 能够解决了一些问题，但是对于一些复杂的页面依然会有白屏的问题
+		</view>
+		<view class="cu-form-group">
+			2、在内部测试中，我们发现 离线存储 能够解决了一些问题，但是对于一些复杂的页面依然会有白屏的问题
+		</view>
+		<view class="cu-form-group">
+			3、在内部测试中，我们发现 离线存储 能够解决了一些问题，但是对于一些复杂的页面依然会有白屏的问题
+		</view>
+		<view class="cu-form-group">
+			4、在内部测试中，我们发现 离线存储 能够解决了一些问题，但是对于一些复杂的页面依然会有白屏的问题
+		</view>
+		<view class="cu-form-group">
+			5、在内部测试中，我们发现 离线存储 能够解决了一些问题，但是对于一些复杂的页面依然会有白屏的问题
+		</view>
+	</view>
+
+</view>

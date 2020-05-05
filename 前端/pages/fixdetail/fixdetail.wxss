@@ -1,0 +1,66 @@
+/* pages/fixform/fixform.wxss */
+.whitecard1 {
+  display: flex;
+  flex-direction: column;
+  padding: 44rpx 62rpx;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  top: 100rpx;
+  width: 750rpx;
+  height: 2300rpx;
+  background: #FFFFFF;
+  border-radius: 25px;
+}
+
+.fyicon {
+  width: 30%;
+}
+
+.title{
+  width:30%;
+  margin-right: 25rpx;
+}
+
+.text1{
+  margin-top: 15rpx;
+  margin-bottom: 15rpx;
+}
+
+.text{
+  width: 60%;
+}
+
+.copybtn{
+  position: absolute;
+  right: 60rpx;
+  font-size: 40rpx;
+}
+
+.inputarea {
+  padding: 25rpx;
+  width: 100%;
+  background: #f1f2f6;
+  border-radius: 7px;
+  border: 1px solid rgba(179, 177, 177, 0.33);
+  box-sizing: border-box;
+}
+
+.btn {
+  width: 100%;
+  height: 100rpx;
+  font-family: SimHei;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.swipercontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}

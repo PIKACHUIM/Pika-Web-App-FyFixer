@@ -1,0 +1,29 @@
+<!--pages/writeanswer/writeanswer.wxml-->
+<view class="garybc">
+<menu></menu>
+	<view class="bluecard" style="height:170rpx">
+		<view>
+			<image src="../../static/images/wave_2.png" mode="widthFix" class="wave"></image>
+		</view>
+		<view>
+			<image src="../../static/images/wave_1.png" mode="widthFix" class="wave"></image>
+		</view>
+		<view>
+			<image src="../../static/images/wave_3.png" mode="widthFix" class="wave1"></image>
+		</view>
+	</view>
+
+  <view>
+    <view class="whitecard_question">
+      <view class="cu-bar bg-white">
+          <text class="blackfont2">电脑无法开机的原因？</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="whitecard" style="top:180rpx">
+		<textarea placeholder="在此写下你的回答" placeholder-style="font-size:15px" style="width:90%;font-size:15px" maxlength="-1" show-confirm-bar="false"></textarea>
+		<button class="cu-btn btn bg-blue light" bindtap="submit_answer">提交回答</button>
+	</view>
+
+</view>

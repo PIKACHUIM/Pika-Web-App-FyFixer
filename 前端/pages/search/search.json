@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "van-card": "../../dist/card/index",
+    "menu":"../../pages/button/button"
+  },
+  "navigationBarTitleText": "搜索"
+}

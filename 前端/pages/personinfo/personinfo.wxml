@@ -1,0 +1,42 @@
+<view class="garybc">
+	<view class="bluecard" style="height:170rpx">
+		<view>
+			<image src="../../static/images/wave_2.png" mode="widthFix" class="wave"></image>
+		</view>
+		<view>
+			<image src="../../static/images/wave_1.png" mode="widthFix" class="wave"></image>
+		</view>
+		<view>
+			<image src="../../static/images/wave_3.png" mode="widthFix" class="wave1"></image>
+		</view>
+
+	</view>
+	<view class="whitecard" style="top:80rpx">
+		<view>
+			<text class="blackfont2" >个人信息</text>
+		</view>
+		<view class="cu-form-group inputarea">
+			<view class="title cu-tag bg-cyan radius ">姓名</view>
+			<input value="{{name}}" bindinput="getname" style="margin-left:30rpx"></input>
+		</view>
+		<view class="cu-form-group inputarea">
+			<view class="title cu-tag bg-cyan radius ">性别</view>
+			<input value="{{sex}}" bindinput="getsex" style="margin-left:30rpx"></input>
+		</view>
+		<view class="cu-form-group inputarea">
+			<view class="title cu-tag bg-cyan radius ">电话</view>
+			<input value="{{phone}}" bindinput="getphone" style="margin-left:30rpx"></input>
+		</view>
+		<view class="cu-form-group inputarea">
+			<view class="title cu-tag bg-cyan radius ">QQ号</view>
+			<input value="{{QQ}}" bindinput="getQQ" style="margin-left:30rpx"></input>
+		</view>
+		<view class="cu-form-group inputarea">
+			<view class="title cu-tag bg-cyan radius ">邮箱</view>
+			<input value="{{email}}" bindinput="getemail" style="margin-left:30rpx"></input>
+		</view>
+		<button class="cu-btn btn bg-blue light" bindtap="submit">提交</button>
+
+	</view>
+
+</view>

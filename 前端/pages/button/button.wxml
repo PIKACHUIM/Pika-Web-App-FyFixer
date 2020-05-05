@@ -1,0 +1,5 @@
+<view>
+<image  animation='{{animationPlus}}' class="img" src="../../static/images/add.png"  mode="widthFix" style="z-index:100" bindtap="showOrHide"></image>
+<image  animation='{{animationAsk}}' class="img" src="../../static/images/ask.png" mode="widthFix"  style="z-index:99" bindtap="ask"></image>
+<image  animation='{{animationAnswer}}' class="img" src="../../static/images/answer.png" mode="widthFix"  style="z-index:98" bindtap="answer"></image>
+</view>

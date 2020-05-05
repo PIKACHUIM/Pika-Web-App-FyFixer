@@ -1,0 +1,79 @@
+<view class="garybc">
+	<view class="bluecard" style="height:140rpx">
+		<view>
+			<image src="../../static/images/wave_2.png" mode="widthFix" class="wave"></image>
+		</view>
+		<view>
+			<image src="../../static/images/wave_1.png" mode="widthFix" class="wave"></image>
+		</view>
+		<view>
+			<image src="../../static/images/wave_3.png" mode="widthFix" class="wave1"></image>
+		</view>
+	</view>
+
+
+	<view class="whitecard1">
+		<view class="rowstart" style="height:100%;width:100%;align-items: start;  ">
+			<view style="width:30%;height:100%" class="colstart;margin-right:75rpx">
+				<view style="width:100%">
+					<!-- <image src="../../static/images/repairman.png" mode="widthFix"></image> -->
+					<open-data type="userAvatarUrl"></open-data>
+				</view>
+			</view>
+			<view class="colstart" style="wdith:65%;height:100%;justify-content: space-between">
+				<view class="rowstart" style="width:100%;">
+					<view class="cu-tag round bg-yellow tec " style="width:120rpx;" wx:if="{{isuser == '0'}}">技术员</view>
+					<view class="cu-tag round bg-green tag" style="width:120rpx;" wx:if="{{isuser == '1'}}">用户</view>
+					<view class="cuIcon-male" style="margin-left:10px;color:blue" wx:if="{{sex == '男'}}"></view>
+					<view class="cuIcon-female" style="margin-left:10px;color:pink" wx:if="{{sex == '女'}}"></view>
+				</view>
+
+				<view class="colstart">
+					<view class="rowstart" style="width:100%;">
+						<text class="blackfont1" decode="{{true}}">Hi&nbsp;</text> 
+						<text class="blackfont1">{{name}}</text> 
+					</view>
+				</view>
+
+				<view>
+						<text class="grayfont1" style="font-size:30rpx">联系电话:{{phone}}</text>
+				</view>
+
+			</view>
+		</view>
+	</view>
+
+	<view class="flex-hor">
+		<view class="colcenter" style="height:100%">
+			<button class="cu-btn btn1 bg-white rowcenter" style="justify-content: space-between;" bindtap="history">
+				<view style="width:30%;height:100%;" class="rowcenter">
+					<view class="cuIcon-countdown " style="color:#10aafe"></view>
+					<view style="color:black">历史记录</view>
+				</view>
+				<view style="width:10% ;height:100%" class="cuIcon-right colcenter"></view>
+			</button>
+			<button class="cu-btn btn1 bg-white rowcenter" style="justify-content: space-between;" bindtap="personinfo">
+				<view style="width:30%;height:100%;" class="rowcenter">
+					<view class="cuIcon-edit " style="color:#10aafe"></view>
+					<view style="color:black">个人设置</view>
+				</view>
+				<view style="width:10% ;height:100%" class="cuIcon-right colcenter"></view>
+			</button>
+			<button class="cu-btn btn1 bg-white rowcenter" style="justify-content: space-between;" bindtap="question">
+				<view style="width:30%;height:100%;" class="rowcenter">
+					<view class="cuIcon-comment " style="color:#10aafe"></view>
+					<view style="color:black">问题反馈</view>
+				</view>
+				<view style="width:10% ;height:100%" class="cuIcon-right colcenter"></view>
+			</button>
+			<button class="cu-btn btn1 bg-white rowcenter" style="justify-content: space-between;" bindtap="program">
+				<view style="width:35%;height:100%;" class="rowcenter">
+					<view class="cuIcon-info " style="color:#10aafe"></view>
+					<view style="color:black">关于小程序</view>
+				</view>
+				<view style="width:10% ;height:100%" class="cuIcon-right colcenter"></view>
+			</button>	
+		</view>
+
+	</view>
+</view>

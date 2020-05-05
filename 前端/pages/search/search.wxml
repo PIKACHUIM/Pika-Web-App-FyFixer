@@ -1,0 +1,136 @@
+<view class="garybc">
+	<menu></menu>
+	<view class="bluecard" style="height:170rpx">
+		<view>
+			<image src="../../static/images/wave_2.png" mode="widthFix" class="wave"></image>
+		</view>
+		<view>
+			<image src="../../static/images/wave_1.png" mode="widthFix" class="wave"></image>
+		</view>
+		<view>
+			<image src="../../static/images/wave_3.png" mode="widthFix" class="wave1"></image>
+		</view>
+	</view>
+
+	<!-- <view>
+    <view class="whitecard_search">
+      <view class="cu-bar search bg-white">
+        <view class="search-form radius">
+          <text class="cuIcon-search" ></text>
+          <input type="text" 
+                 placeholder="搜索"
+                 placeholder-style="color:#CCCCCC;font-size: 15px;"
+                 maxlength="25"
+                 confirm-type="search">
+          </input>
+        </view>
+      </view>
+    </view>
+    <view>
+      <button class="cu-btn button_question" style="background-color:#ffffff">搜索</button>
+    </view>
+  </view> -->
+
+	<!-- 白色卡片 -->
+	<view class="whitecard1">
+		<view style="width:90%;  justify-content:space-between;margin-bottom:35rpx" class="rowcenter">
+			<view class="cu-form-group inputarea">
+				<text class="cuIcon-search " style="margin-right:25rpx"></text>
+				<input placeholder="搜索" type="text" placeholder-style="color:#CCCCCC;font-size: 15px;" maxlength="25" confirm-type="search"></input>
+
+			</view>
+			<button class="cu-btn search-btn " style="  background-color:#54a0ff;">搜索</button>
+		</view>
+
+		<!-- 查询列表 -->
+		<!-- <view class="colcenter list" bindtap="searchdetail">
+
+			<view class="colcenter listcard ">
+				<view class="card colstart" style="width:100%;" style="  padding: 24rpx 24rpx;">
+					<view class="rowstart" style="width:100%;">
+						<text class="blackfont2" style="font-size:40rpx">插入U盘后无反应的原因？</text>
+					</view>
+					<view class="rowstart" style="width:100%;height:60rpx">
+						<image style="height:60rpx;width:60rpx;margin-right:25rpx" mode="aspectFit" src="../../static/images/repairman.png"></image>
+						<view class="rowstart">
+							<view class="cu-tag round bg-yellow tec " style="width:100rpx;height:30rpx;margin-right:25rpx">技术员</view>
+						</view>
+						<view class="grayfont2">卡皮丘</view>
+					</view>
+					<view >
+						<text class="grayfont2 textoverflow" style="font-size:35rpx;-webkit-line-clamp:5;width:95%;text-align:left;">电脑个原因：1、内存条接触不良；2、软件安装不兼容导致蓝屏；3、电脑中毒引起电脑蓝屏；4、电脑超频运行致CPU过热或是内部硬件温度过高.</text>
+					</view>
+
+				</view>
+			</view>
+		</view> -->
+		<view class="colcenter list" bindtap="searchdetail">
+			<!-- 问题卡片 -->
+			<view class="colcenter listcard  ">
+				<view class="card colstart" style="width:100%;">
+					<view class="rowcenter" style="width:100%;height:100%">
+						<view class="solids-right colcenter cardleft">
+							<view class="colcenter">
+								<image style="height:150rpx;width:150rpx;" mode="aspectFit" src="../../static/images/repairman.png"></image>
+								<view class="rowcenter" style="width:100%;">
+									<view class="cu-tag round bg-yellow tec " style="width:100rpx;height:30rpx">技术员</view>
+								</view>
+								<view style="width:90%;height:25%;font-size:40rpx" class="grayfont1">卡皮丘</view>
+							</view>
+						</view>
+						<view class="colcenter cardright" style="">
+							<text class="blackfont2" style="font-size:40rpx">插入U盘后无反应的原因？</text>
+							<text class="grayfont2 textoverflow" style="font-size:35rpx;-webkit-line-clamp:3;width:90%">电脑出现蓝屏一般有以下几个原因：1、内存条接触不良；2、软件安装不兼容导致蓝屏；3、电脑中毒引起电脑蓝屏；4、电脑超频运行致CPU过热或是内部硬件温度过高.</text>
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+		<view class="colcenter list" bindtap="searchdetail">
+			<!-- 问题卡片 -->
+			<view class="colcenter listcard  ">
+				<view class="card colstart" style="width:100%;">
+					<view class="rowcenter" style="width:100%;height:100%">
+						<view class="solids-right colcenter cardleft">
+							<view class="colcenter">
+								<image style="height:150rpx;width:150rpx;" mode="aspectFit" src="../../static/images/repairman.png"></image>
+								<view class="rowcenter" style="width:100%;">
+									<view class="cu-tag round bg-yellow tec " style="width:100rpx;height:30rpx">技术员</view>
+								</view>
+								<view style="width:90%;height:25%;font-size:40rpx" class="grayfont1">卡皮丘</view>
+							</view>
+						</view>
+						<view class="colcenter cardright" style="">
+							<text class="blackfont2" style="font-size:40rpx">插入U盘后无反应的原因？</text>
+							<text class="grayfont2 textoverflow" style="font-size:35rpx;-webkit-line-clamp:3;width:90%">电脑出现蓝屏一般有以下几个原因：1、内存条接触不良；2、软件安装不兼容导致蓝屏；3、电脑中毒引起电脑蓝屏；4、电脑超频运行致CPU过热或是内部硬件温度过高.</text>
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+		<view class="colcenter list" bindtap="searchdetail">
+			<!-- 问题卡片 -->
+			<view class="colcenter listcard  ">
+				<view class="card colstart" style="width:100%;">
+					<view class="rowcenter" style="width:100%;height:100%">
+						<view class="solids-right colcenter cardleft">
+							<view class="colcenter">
+								<image style="height:150rpx;width:150rpx;" mode="aspectFit" src="../../static/images/repairman.png"></image>
+								<view class="rowcenter" style="width:100%;">
+									<view class="cu-tag round bg-yellow tec " style="width:100rpx;height:30rpx">技术员</view>
+								</view>
+								<view style="width:90%;height:25%;font-size:40rpx" class="grayfont1">卡皮丘</view>
+							</view>
+						</view>
+						<view class="colcenter cardright" style="">
+							<text class="blackfont2" style="font-size:40rpx">插入U盘后无反应的原因？</text>
+							<text class="grayfont2 textoverflow" style="font-size:35rpx;-webkit-line-clamp:3;width:90%">电脑出现蓝屏一般有以下几个原因：1、内存条接触不良；2、软件安装不兼容导致蓝屏；3、电脑中毒引起电脑蓝屏；4、电脑超频运行致CPU过热或是内部硬件温度过高.</text>
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+
+
+	</view>
+</view>

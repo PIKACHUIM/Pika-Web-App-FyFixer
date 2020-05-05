@@ -1,0 +1,65 @@
+<!--pages/searchdetail/searchdetail.wxml-->
+<view class="garybc">
+<menu></menu>
+	<view class="bluecard" style="height:170rpx">
+		<view>
+			<image src="../../static/images/wave_2.png" mode="widthFix" class="wave"></image>
+		</view>
+		<view>
+			<image src="../../static/images/wave_1.png" mode="widthFix" class="wave"></image>
+		</view>
+		<view>
+			<image src="../../static/images/wave_3.png" mode="widthFix" class="wave1"></image>
+		</view>
+	</view>
+
+  <view>
+    <view class="whitecard_searchdetail">
+      <view class="cu-bar bg-white">
+          <text class="blackfont2">电脑蓝屏的原因？</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="whitecard1">
+		<!-- 查询列表 -->
+		<view class="colstart list">
+			<!-- 问题卡片 -->
+			<view class="colstart listcard">
+				<view class="colstart" style="width:100%">
+          <view class="rowstart" style="width:100%">
+						<image style="height:120rpx;width:120rpx;" mode="aspectFit" src="../../static/images/repairman.png"></image>
+            <view class="colstart" style="width:30%;">
+					    <view class="cu-tag round bg-yellow tec " style="width:100rpx;height:30rpx">技术员</view>
+					    <!-- <view class="cu-tag round bg-green tag" style="width:100rpx;height:30rpx">用户</view> -->
+              <view style="width:90%;height:25%;font-size:40rpx" class="blackfont1">卡皮丘</view>
+				    </view>
+					</view>
+					<view class="colstart" style="width:100%;height:90%;padding:5rpx">
+            <text class="grayfont2" style="font-size:37rpx;text-align:left">电脑出现蓝屏一般有以下几个原因：\n1、内存条接触不良；\n2、软件安装不兼容导致蓝屏；\n3、电脑中毒引起电脑蓝屏；\n4、电脑超频运行致CPU过热或是内部硬件温度过高。</text>
+          </view>
+				</view>
+			</view>
+
+      <!-- 分割线 -->
+      <view class="divLine"></view>
+
+      <view class="colstart listcard">
+				<view class="colstart" style="width:100%">
+          <view class="rowstart" style="width:100%">
+						<image style="height:120rpx;width:120rpx;" mode="aspectFit" src="../../static/images/repairman.png"></image>
+            <view class="colstart" style="width:30%;">
+					    <view class="cu-tag round bg-yellow tec " style="width:100rpx;height:30rpx">技术员</view>
+					    <!-- <view class="cu-tag round bg-green tag" style="width:100rpx;height:30rpx">用户</view> -->
+              <view style="width:90%;height:25%;font-size:40rpx" class="blackfont1">丘卡皮</view>
+				    </view>
+					</view>
+					<view class="colstart" style="width:100%;height:90%;padding:5rpx">
+            <text class="grayfont2" style="font-size:37rpx;text-align:left">1、驱动/软件的兼容问题，蓝屏代码如出现后缀为“.sys”的文件，表示的是系统中的驱动类文件，出现这种蓝屏是由相关驱动不兼容引起的；\n2、内存条兼容性或接触不良， 解决办法:在断电状态下重新插拔内存条，先用干净的A4纸折成一定的厚度擦拭内存插槽，再用干净的橡片擦内存条的金手指;大部分主板会有还几条DIMM（内存）插槽，此时可更换到别的DIMM插槽位置;更换兼容性好的内存条；\n3、硬盘出现故障，硬盘异常和坏道也会引发蓝屏；\n4、病毒木马或系统导致的蓝屏;\n5、电脑温度过高，建议检查CPU或者显卡温度。</text>
+          </view>
+				</view>
+			</view>
+		</view>
+  </view>
+
+</view>

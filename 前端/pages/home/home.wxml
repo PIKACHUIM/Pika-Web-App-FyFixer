@@ -1,0 +1,458 @@
+<!--pages/home/home.wxml-->
+
+<!-- 技术员登录 -->
+<view wx:if="{{isuser == '0'}}">
+	<!-- 空闲状态 -->
+	<view wx:if="{{fixer_state == '0'}}">
+		<view class="garybc">
+			<menu></menu>
+			<view class="bluecard" style="height:170rpx">
+				<view>
+					<image src="../../static/images/wave_2.png" mode="widthFix" class="wave"></image>
+				</view>
+				<view>
+					<image src="../../static/images/wave_1.png" mode="widthFix" class="wave"></image>
+				</view>
+				<view>
+					<image src="../../static/images/wave_3.png" mode="widthFix" class="wave1"></image>
+				</view>
+			</view>
+
+			<!-- 白色卡片 -->
+			<view class="whitecard1">
+				<!-- 接单提醒 -->
+				<view class="colcenter" style="height:120rpx">
+					<text class="blackfont2" >Hey，亲爱的技术员</text>
+					<text class="grayfont2">选择你想要的订单吧</text>
+				</view>
+				<!-- 订单列表 -->
+				<view class="colcenter list">
+					<!-- 订单卡片 -->
+					<view class="colcenter listcard solids-bottom">
+						<view class="card rowcenter" style="width:100%;">
+							<view class="solids-right colcenter" style="width:40%;height:90%">
+								<image style="height:65%;" mode="aspectFit" src="../../static/images/repairman.png"></image>
+								<view style="width:90%;height:25%;font-size:40rpx" class="blackfont1">皮卡丘</view>
+							</view>
+							<view style="width:60%;height:90%;padding:10rpx" class="colcenter">
+								<!-- 设备类型 -->
+								<view class="colcenter" style="width:100%;">
+									<view class="cu-tag line-cyan round ">设备类型</view>
+									<view>平板</view>
+								</view>
+								<!-- 设备品牌 -->
+								<view class="colcenter" style="width:100%;">
+									<view class="cu-tag line-cyan round ">设备品牌</view>
+									<view>华为</view>
+								</view>
+								<!-- 时间 -->
+								<view class="colstart" style="width:100%;">
+									<view class="cu-tag line-cyan round ">报修时间</view>
+									<view class="textoverflow">2020-4-7</view>
+								</view>
+							</view>
+						</view>
+						<view class="rowcenter" style="width:100% ;justify-content:space-around;">
+							<button class="cu-btn btn " style="width:300rpx" bindtap="detail">查看详情</button>
+						</view>
+					</view>
+				</view>
+
+				<view class="colcenter list">
+					<!-- 订单卡片 -->
+					<view class="colcenter listcard solids-bottom">
+						<view class="card rowcenter" style="width:100%;">
+							<view class="solids-right colcenter" style="width:40%;height:90%">
+								<image style="height:65%;" mode="aspectFit" src="../../static/images/repairman.png"></image>
+								<view style="width:90%;height:25%;font-size:40rpx" class="blackfont1">皮卡丘</view>
+							</view>
+							<view style="width:60%;height:90%;padding:10rpx" class="colcenter">
+								<!-- 设备类型 -->
+								<view class="colcenter" style="width:100%;">
+									<view class="cu-tag line-cyan round ">设备类型</view>
+									<view>平板</view>
+								</view>
+								<!-- 设备品牌 -->
+								<view class="colcenter" style="width:100%;">
+									<view class="cu-tag line-cyan round ">设备品牌</view>
+									<view>华为</view>
+								</view>
+								<!-- 时间 -->
+								<view class="colstart" style="width:100%;">
+									<view class="cu-tag line-cyan round ">报修时间</view>
+									<view class="textoverflow">2020-4-7</view>
+								</view>
+							</view>
+						</view>
+						<view class="rowcenter" style="width:100% ;justify-content:space-around;">
+							<button class="cu-btn btn " style="width:300rpx" bindtap="detail">查看详情</button>
+						</view>
+					</view>
+				</view>
+
+				<view class="colcenter list">
+					<!-- 订单卡片 -->
+					<view class="colcenter listcard  solids-bottom">
+						<view class="card rowcenter" style="width:100%;">
+							<view class="solids-right colcenter" style="width:40%;height:90%">
+								<image style="height:65%;" mode="aspectFit" src="../../static/images/repairman.png"></image>
+								<view style="width:90%;height:25%;font-size:40rpx" class="blackfont1">皮卡丘</view>
+							</view>
+							<view style="width:60%;height:90%;padding:10rpx" class="colcenter">
+								<!-- 设备类型 -->
+								<view class="colcenter" style="width:100%;">
+									<view class="cu-tag line-cyan round ">设备类型</view>
+									<view>平板</view>
+								</view>
+								<!-- 设备品牌 -->
+								<view class="colcenter" style="width:100%;">
+									<view class="cu-tag line-cyan round ">设备品牌</view>
+									<view>华为</view>
+								</view>
+								<!-- 时间 -->
+								<view class="colstart" style="width:100%;">
+									<view class="cu-tag line-cyan round ">报修时间</view>
+									<view class="textoverflow">2020-4-7</view>
+								</view>
+							</view>
+						</view>
+						<view class="rowcenter" style="width:100% ;justify-content:space-around;">
+							<button class="cu-btn btn " style="width:300rpx" bindtap="detail">查看详情</button>
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+
+
+	<!-- 已接单状态 -->
+	<view wx:if="{{user_state == '2'}}">
+		<view class="garybc">
+			<view class="bluecard" style="height:170rpx">
+				<view>
+					<image src="../../static/images/wave_2.png" mode="widthFix" class="wave"></image>
+				</view>
+				<view>
+					<image src="../../static/images/wave_1.png" mode="widthFix" class="wave"></image>
+				</view>
+				<view>
+					<image src="../../static/images/wave_3.png" mode="widthFix" class="wave1"></image>
+				</view>
+			</view>
+			<!-- 白色卡片 -->
+			<view class="fixing_whitecard">
+
+				<!-- 技术员面板 -->
+				<image mode="widthFix" class="fixericon" src="../../static/images/repairman.png"></image>
+				<view class="rowcenter solids-bottom" style="width:90%;justify-content: space-between;padding:25rpx">
+					<view class="fixerName">皮卡丘</view>
+					<view class="rowcenter">
+						<view class="cu-tag round bg-yellow tec " style="width:100rpx;height:35rpx;">技术员</view>
+						<!-- <view class="cu-tag round bg-green tag" style="width:100rpx;height:35rpx;top:10rpx">用户</view> -->
+						<!-- <view class="cuIcon-male" style="margin-left:10px;color:blue;margin-top:15rpx"></view> -->
+						<view class="cuIcon-female" style="margin-left:10px;color:pink;"></view>
+					</view>
+				</view>
+
+				<view class="connectionbox">
+					<view class="connectionbox1">
+						<text class="telandqq">联系电话</text>
+						<text class="number">{{phone}}</text>
+						<button class="cu-btn buttoncommon " style="width:200rpx" bindtap="copy" data-text="{{phone}}">复制</button>
+					</view>
+					<view class="connectionbox1">
+						<text class="telandqq">QQ号</text>
+						<text class="number">{{QQ}}</text>
+						<button class="cu-btn buttoncommon" style="width:200rpx" bindtap="copy" data-text="{{QQ}}">复制</button>
+					</view>
+				</view>
+			</view>
+
+			<!-- 三个轮播图 -->
+			<swiper class="swipercontainer" previous-margin="50rpx" next-margin="40rpx" current="{{isuser=='1'?0:1}}" indicator-dots="true" duration="500" bindchange="cardSwiper" indicator-color="#8799a3" indicator-active-color="#0081ff">
+
+				<!-- 设备问题界面 -->
+				<!-- <swiper-item style=" transform: translate(0%, 0px) translateZ(0px); " class="center">
+          <view class="title blackfont2">设备问题</view>
+          <view class="itemcard" style="  justify-content: center;">
+            <view style="width:85%;height:70%;" class="cu-card bg text-center padding ">不小心把电脑坐爆了</view>
+          </view>
+        </swiper-item> -->
+				<swiper-item style=" transform: translate(0%, 0px) translateZ(0px);" class="center">
+					<view class="title blackfont2">设备问题</view>
+					<view class="itemcard2">
+						<view class="textoverflow" style="height:50%;width:90%">
+							哈哈哈哈哈哈哈哈哈哈哈哈haha 哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈
+
+						</view>
+						<view style="height:45%;width:90%" class="shadow solid">
+							<!-- <van-grid column-num="3" border="{{ false }}">
+								<van-grid-item use-slot wx:for="{{swiperList}}" wx:for-item="index">
+								      <image src="{{item.url}}" mode="widthFix" wx:if="{{item.type=='image'}}" style="width：30%"></image>
+								</van-grid-item>
+							</van-grid> -->
+							<scroll-view class="scroll-wrap" scroll-x="true">
+								<view class="scroll-view-item" wx:for="{{imgArray}}"  wx:key='index' >
+									<view class="scroll-img-wrap scroll-major-img-wrap">
+										<image  src="{{item}}" mode="widthFix" bindtap='previewImg' data-src="{{item}}" class="img-responsive" data-list="{{imgArray}}" />
+									</view>
+								</view>
+							</scroll-view>
+
+						</view>
+					</view>
+				</swiper-item>
+
+				<!-- 设备详情界面 -->
+				<swiper-item style=" transform: translate(0%, 0px) translateZ(0px); " class="center">
+					<view class="title blackfont2">设备详情</view>
+					<!-- 左半边 -->
+					<view class="itemcard">
+						<view class="itemcard1  ">
+							<view class="detail">
+								<view class="cu-tag round bg-cyan" style="margin:15rpx;width:170rpx">设备类型</view><text>笔记本</text>
+							</view>
+							<view class="detail">
+								<view class="cu-tag round bg-cyan" style="margin:15rpx;width:170rpx">品牌</view><text>联想</text>
+							</view>
+							<view class="detail">
+								<view class="cu-tag round bg-cyan" style="margin:15rpx;width:170rpx">系列</view><text>小新AIR</text>
+							</view>
+						</view>
+						<!-- 右半边 -->
+						<view class="itemcard1">
+							<view class="detail">
+								<view class="cu-tag round bg-cyan" style="margin:15rpx;width:170rpx">型号</view><text>MP158MQ8g</text>
+							</view>
+							<view class="detail">
+								<view class="cu-tag round bg-cyan" style="margin:15rpx;width:170rpx">购买时间</view><text>2020-01-01</text>
+							</view>
+							<view class="detail">
+								<view class="cu-tag round bg-cyan" style="margin:15rpx;width:170rpx">保修状态</view><text>过保</text>
+							</view>
+						</view>
+					</view>
+				</swiper-item>
+
+				<!-- 时间轴界面 -->
+				<swiper-item style=" transform: translate(0%, 0px) translateZ(0px);" class="center">
+					<view class="title blackfont2">维修时间轴</view>
+					<view class="itemcard">
+						<view>
+							<van-steps steps="{{ steps }}" active="{{ active }}" direction="vertical" active-color="#38f" style="width:100%" active="1" />
+						</view>
+						<view style="width:50%">
+							<image src="../../static/images/fixtime.png" mode="widthFix"></image>
+						</view>
+					</view>
+				</swiper-item>
+			</swiper>
+
+			<!-- 下方按钮 -->
+			<view class=" bottombtn">
+				<button class="cu-btn fixing_btn bg-gradual-blue " disabled="{{button_isuse}}" bindtap="confirm_finish">确认维修完成</button>
+				<button class="cu-btn fixing_btn bg-red " bindtap="cancel">撤销订单</button>
+			</view>
+		</view>
+	</view>
+
+</view>
+
+<!-- 用户登录 -->
+<view wx:if="{{isuser == '1'}}">
+	<!-- 空闲状态 -->
+	<view wx:if="{{user_state == '0'}}">
+		<view class="bluecard" style="height:170rpx">
+			<view>
+				<image src="../../static/images/wave_2.png" mode="widthFix" class="wave"></image>
+			</view>
+			<view>
+				<image src="../../static/images/wave_1.png" mode="widthFix" class="wave"></image>
+			</view>
+			<view>
+				<image src="../../static/images/wave_3.png" mode="widthFix" class="wave1"></image>
+			</view>
+		</view>
+		<view class="userempty_whitecard">
+			<view class="blackfont1" style="font-size:50rpx">目前没有正在维修的订单噢~</view>
+			<view>
+				<image src="../../static/images/empty.png"></image>
+			</view>
+			<button class="cu-btn userempty_btn bg-gradual-blue" bindtap="repair">我要报修</button>
+		</view>
+	</view>
+
+	<!-- 等待技术员接单状态 -->
+	<view wx:if="{{user_state == '1'}}">
+		<view class="bluecard" style="height:170rpx">
+			<view>
+				<image src="../../static/images/wave_2.png" mode="widthFix" class="wave"></image>
+			</view>
+			<view>
+				<image src="../../static/images/wave_1.png" mode="widthFix" class="wave"></image>
+			</view>
+			<view>
+				<image src="../../static/images/wave_3.png" mode="widthFix" class="wave1"></image>
+			</view>
+		</view>
+		<view class="userempty_whitecard">
+			<view class="blackfont1" style="font-size:50rpx">您的报修单正等待接单中~</view>
+			<view>
+				<image src="../../static/images/busy.png"></image>
+			</view>
+			<button class="cu-btn userempty_btn bg-gradual-blue" bindtap="look">查看订单详情</button>
+		</view>
+	</view>
+
+	<!-- 已被接单状态 -->
+	<view wx:if="{{user_state == '2'}}">
+		<view class="garybc">
+			<view class="bluecard" style="height:170rpx">
+				<view>
+					<image src="../../static/images/wave_2.png" mode="widthFix" class="wave"></image>
+				</view>
+				<view>
+					<image src="../../static/images/wave_1.png" mode="widthFix" class="wave"></image>
+				</view>
+				<view>
+					<image src="../../static/images/wave_3.png" mode="widthFix" class="wave1"></image>
+				</view>
+			</view>
+			<!-- 白色卡片 -->
+			<view class="fixing_whitecard">
+
+				<!-- 技术员面板 -->
+				<image mode="widthFix" class="fixericon" src="../../static/images/repairman.png"></image>
+				<view class="rowcenter solids-bottom" style="width:90%;justify-content: space-between;padding:25rpx">
+					<view class="fixerName">皮卡丘</view>
+					<view class="rowcenter">
+						<view class="cu-tag round bg-yellow tec " style="width:100rpx;height:35rpx;">技术员</view>
+						<!-- <view class="cu-tag round bg-green tag" style="width:100rpx;height:35rpx;top:10rpx">用户</view> -->
+						<!-- <view class="cuIcon-male" style="margin-left:10px;color:blue;margin-top:15rpx"></view> -->
+						<view class="cuIcon-female" style="margin-left:10px;color:pink;"></view>
+					</view>
+				</view>
+
+				<view class="connectionbox">
+					<view class="connectionbox1">
+						<text class="telandqq">联系电话</text>
+						<text class="number">{{phone}}</text>
+						<button class="cu-btn buttoncommon " style="width:200rpx" bindtap="copy" data-text="{{phone}}">复制</button>
+					</view>
+					<view class="connectionbox1">
+						<text class="telandqq">QQ号</text>
+						<text class="number">{{QQ}}</text>
+						<button class="cu-btn buttoncommon" style="width:200rpx" bindtap="copy" data-text="{{QQ}}">复制</button>
+					</view>
+				</view>
+			</view>
+
+			<!-- 三个轮播图 -->
+			<swiper class="swipercontainer" previous-margin="50rpx" next-margin="40rpx" current="{{isuser=='1'?0:1}}" indicator-dots="true" duration="500" bindchange="cardSwiper" indicator-color="#8799a3" indicator-active-color="#0081ff">
+
+				<!-- 设备问题界面 -->
+				<!-- <swiper-item style=" transform: translate(0%, 0px) translateZ(0px); " class="center">
+          <view class="title blackfont2">设备问题</view>
+          <view class="itemcard" style="  justify-content: center;">
+            <view style="width:85%;height:70%;" class="cu-card bg text-center padding ">不小心把电脑坐爆了</view>
+          </view>
+        </swiper-item> -->
+				<swiper-item style=" transform: translate(0%, 0px) translateZ(0px);" class="center">
+					<view class="title blackfont2">设备问题</view>
+					<view class="itemcard2">
+						<view class="textoverflow" style="height:50%;width:90%">
+							哈哈哈哈哈哈哈哈哈哈哈哈haha 哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈
+
+						</view>
+						<view style="height:50%;width:90%">
+							<!-- <van-grid column-num="3" border="{{ false }}">
+								<van-grid-item use-slot wx:for="{{swiperList}}" wx:for-item="index">
+								      <image src="{{item.url}}" mode="widthFix" wx:if="{{item.type=='image'}}" style="width：30%"></image>
+								</van-grid-item>
+							</van-grid> -->
+							<scroll-view class="scroll-wrap" scroll-x="true">
+								<view class="scroll-view-item" wx:for="{{imgArray}}"  wx:key='index' >
+									<view class="scroll-img-wrap scroll-major-img-wrap">
+										<image  src="{{item}}" mode="widthFix" bindtap='previewImg' data-src="{{item}}" class="img-responsive" data-list="{{imgArray}}" />
+									</view>
+								</view>
+							</scroll-view>
+
+						</view>
+					</view>
+				</swiper-item>
+
+				<!-- 设备详情界面 -->
+				<swiper-item style=" transform: translate(0%, 0px) translateZ(0px); " class="center">
+					<view class="title blackfont2">设备详情</view>
+					<!-- 左半边 -->
+					<view class="itemcard">
+						<view class="itemcard1  ">
+							<view class="detail">
+								<view class="cu-tag round bg-cyan" style="margin:15rpx;width:170rpx">设备类型</view><text>笔记本</text>
+							</view>
+							<view class="detail">
+								<view class="cu-tag round bg-cyan" style="margin:15rpx;width:170rpx">品牌</view><text>联想</text>
+							</view>
+							<view class="detail">
+								<view class="cu-tag round bg-cyan" style="margin:15rpx;width:170rpx">系列</view><text>小新AIR</text>
+							</view>
+						</view>
+						<!-- 右半边 -->
+						<view class="itemcard1">
+							<view class="detail">
+								<view class="cu-tag round bg-cyan" style="margin:15rpx;width:170rpx">型号</view><text>MP158MQ8g</text>
+							</view>
+							<view class="detail">
+								<view class="cu-tag round bg-cyan" style="margin:15rpx;width:170rpx">购买时间</view><text>2020-01-01</text>
+							</view>
+							<view class="detail">
+								<view class="cu-tag round bg-cyan" style="margin:15rpx;width:170rpx">保修状态</view><text>过保</text>
+							</view>
+						</view>
+					</view>
+				</swiper-item>
+
+				<!-- 时间轴界面 -->
+				<swiper-item style=" transform: translate(0%, 0px) translateZ(0px);" class="center">
+					<view class="title blackfont2">维修时间轴</view>
+					<view class="itemcard">
+						<view>
+							<van-steps steps="{{ steps }}" active="{{ active }}" direction="vertical" active-color="#38f" style="width:100%" active="1" />
+						</view>
+						<view style="width:50%">
+							<image src="../../static/images/fixtime.png" mode="widthFix"></image>
+						</view>
+					</view>
+				</swiper-item>
+			</swiper>
+
+			<!-- 下方按钮 -->
+			<view class=" bottombtn">
+				<button class="cu-btn fixing_btn bg-gradual-blue " disabled="{{button_isuse}}" bindtap="confirm_finish">确认维修完成</button>
+				<button class="cu-btn fixing_btn bg-red " bindtap="cancel">撤销订单</button>
+			</view>
+		</view>
+	</view>
+	<!-- <view class="cu-modal {{DialogModal1?'show':''}}">
+  <view class="cu-dialog">
+    <view class="cu-bar bg-white justify-end">
+      <view class="content">注意</view>
+      <view class="action" bindtap="hideModal">
+        <text class="cuIcon-close text-red"></text>
+      </view>
+    </view>
+    <view class="padding-xl">
+     是否确认完成
+    </view>
+    <view class="cu-bar bg-white justify-end">
+      <view class="action">
+        <button class="cu-btn line-green text-green" bindtap="hideModal">取消</button>
+        <button class="cu-btn bg-green margin-left" bindtap="hideModal">确定</button>
+      </view>
+    </view>
+  </view>
+</view> -->
+
+</view>

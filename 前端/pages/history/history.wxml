@@ -1,0 +1,120 @@
+<!--pages/history/history.wxml-->
+<view class="garybc">
+<menu></menu>
+	<view class="bluecard" style="height:170rpx">
+		<view>
+			<image src="../../static/images/wave_2.png" mode="widthFix" class="wave"></image>
+		</view>
+		<view>
+			<image src="../../static/images/wave_1.png" mode="widthFix" class="wave"></image>
+		</view>
+		<view>
+			<image src="../../static/images/wave_3.png" mode="widthFix" class="wave1"></image>
+		</view>
+	</view>
+
+	<!-- 白色卡片 -->
+	<view class="whitecard1">
+		<!-- 接单提醒 -->
+		<view class="colcenter" style="height:120rpx">
+			<text class="blackfont2" >您的历史维修记录</text>
+		</view>
+		<!-- 订单列表 -->
+		<view class="colcenter list">
+			<!-- 订单卡片 -->
+			<view class="colcenter listcard solids-bottom">
+				<view class="card rowcenter" style="width:100%;">
+					<view class="solids-right colcenter" style="width:40%;height:90%">
+						<image style="height:65%;" mode="aspectFit" src="../../static/images/repairman.png"></image>
+						<view style="width:90%;height:25%;font-size:40rpx" class="blackfont1">皮卡丘</view>
+					</view>
+					<view style="width:60%;height:90%;padding:10rpx" class="colcenter">
+						<!-- 设备类型 -->
+						<view class="colcenter" style="width:100%;">
+							<view class="cu-tag line-cyan round ">设备类型</view>
+							<view>平板</view>
+						</view>
+						<!-- 设备品牌 -->
+						<view class="colcenter" style="width:100%;">
+							<view class="cu-tag line-cyan round ">设备品牌</view>
+							<view>华为</view>
+						</view>
+						<!-- 时间 -->
+						<view class="colstart" style="width:100%;">
+							<view class="cu-tag line-cyan round ">报修时间</view>
+							<view class="textoverflow">2020-4-7</view>
+						</view>
+					</view>
+				</view>
+				<view class="rowcenter" style="width:100% ;justify-content:space-around;">
+					<button class="cu-btn btn " style="width:300rpx" bindtap="detail">查看详情</button> 
+				</view>
+			</view>
+
+
+		</view>
+		<view class="colcenter list">
+			<!-- 订单卡片 -->
+			<view class="colcenter listcard solids-bottom">
+				<view class="card rowcenter" style="width:100%;">
+					<view class="solids-right colcenter" style="width:40%;height:90%">
+						<image style="height:65%;" mode="aspectFit" src="../../static/images/repairman.png"></image>
+						<view style="width:90%;height:25%;font-size:40rpx" class="blackfont1">皮卡丘</view>
+					</view>
+					<view style="width:60%;height:90%;padding:10rpx" class="colcenter">
+						<!-- 设备类型 -->
+						<view class="colcenter" style="width:100%;">
+							<view class="cu-tag line-cyan round ">设备类型</view>
+							<view>平板</view>
+						</view>
+						<!-- 设备品牌 -->
+						<view class="colcenter" style="width:100%;">
+							<view class="cu-tag line-cyan round ">设备品牌</view>
+							<view>华为</view>
+						</view>
+						<!-- 时间 -->
+						<view class="colstart" style="width:100%;">
+							<view class="cu-tag line-cyan round ">报修时间</view>
+							<view class="textoverflow">2020-4-7</view>
+						</view>
+					</view>
+				</view>
+				<view class="rowcenter" style="width:100% ;justify-content:space-around;">
+					<button class="cu-btn btn " style="width:300rpx" bindtap="detail">查看详情</button> </view>
+			</view>
+
+		</view>
+		<view class="colcenter list">
+			<!-- 订单卡片 -->
+			<view class="colcenter listcard  solids-bottom">
+				<view class="card rowcenter" style="width:100%;">
+					<view class="solids-right colcenter" style="width:40%;height:90%">
+						<image style="height:65%;" mode="aspectFit" src="../../static/images/repairman.png"></image>
+						<view style="width:90%;height:25%;font-size:40rpx" class="blackfont1">皮卡丘</view>
+					</view>
+					<view style="width:60%;height:90%;padding:10rpx" class="colcenter">
+						<!-- 设备类型 -->
+						<view class="colcenter" style="width:100%;">
+							<view class="cu-tag line-cyan round ">设备类型</view>
+							<view>平板</view>
+						</view>
+						<!-- 设备品牌 -->
+						<view class="colcenter" style="width:100%;">
+							<view class="cu-tag line-cyan round ">设备品牌</view>
+							<view>华为</view>
+						</view>
+						<!-- 时间 -->
+						<view class="colstart" style="width:100%;">
+							<view class="cu-tag line-cyan round ">报修时间</view>
+							<view class="textoverflow">2020-4-7</view>
+						</view>
+					</view>
+				</view>
+				<view class="rowcenter" style="width:100% ;justify-content:space-around;">
+					<button class="cu-btn btn " style="width:300rpx" bindtap="detail">查看详情</button> </view>
+			</view>
+		</view>
+
+	</view>
+
+</view>

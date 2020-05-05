@@ -1,0 +1,6 @@
+{
+  "usingComponents": {"van-steps": "../../dist/steps/index",
+    "van-grid": "../../dist/grid/index",
+    "van-grid-item": "../../dist/grid-item/index"},
+  "navigationBarTitleText": "首页"
+}

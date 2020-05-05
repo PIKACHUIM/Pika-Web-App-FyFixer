@@ -1,0 +1,20 @@
+<!--pages/ask/ask.wxml-->
+<view class="garybc">
+	<view class="bluecard" style="height:170rpx">
+		<view>
+			<image src="../../static/images/wave_2.png" mode="widthFix" class="wave"></image>
+		</view>
+		<view>
+			<image src="../../static/images/wave_1.png" mode="widthFix" class="wave"></image>
+		</view>
+		<view>
+			<image src="../../static/images/wave_3.png" mode="widthFix" class="wave1"></image>
+		</view>
+
+	</view>
+	<view class="whitecard" style="top:80rpx">
+		<textarea placeholder="请写下你的问题，准确地描述问题更容易得到解答" placeholder-style="font-size:15px" style="width:90%;font-size:15px" maxlength="46" show-confirm-bar="false"></textarea>
+		<button class="cu-btn btn bg-blue light" bindtap="ask_1">提问</button>
+
+	</view>
+</view>

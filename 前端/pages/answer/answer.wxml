@@ -1,0 +1,72 @@
+<!--pages/answer/answer.wxml-->
+<view class="garybc">
+<menu></menu>
+	<view class="bluecard" style="height:170rpx">
+		<view>
+			<image src="../../static/images/wave_2.png" mode="widthFix" class="wave"></image>
+		</view>
+		<view>
+			<image src="../../static/images/wave_1.png" mode="widthFix" class="wave"></image>
+		</view>
+		<view>
+			<image src="../../static/images/wave_3.png" mode="widthFix" class="wave1"></image>
+		</view>
+	</view>
+
+  <!-- 白色卡片 -->
+	<view class="whitecard1">
+		<!-- 查询列表 -->
+		<view class="colcenter list">
+			<!-- 问题卡片 -->
+			<view class="colstart listcard  solids-bottom">
+				<view class="card rowstart" style="width:100%;">
+          <text class="blackfont2" style="font-size:40rpx;width:70%">电脑无法开机的原因？</text>
+          <button class="cu-btn btn bg-blue light" style="width:28%" bindtap="writeanswer">写回答</button>
+				</view>
+			</view>
+		</view>
+
+		<view class="colcenter list">
+			<!-- 问题卡片 -->
+			<view class="colstart listcard  solids-bottom">
+				<view class="card rowstart" style="width:100%;">
+          <text class="blackfont2" style="font-size:40rpx;width:70%">川大机房的电脑如何充值？</text>
+          <button class="cu-btn btn bg-blue light" style="width:28%" bindtap="writeanswer">写回答</button>
+				</view>
+			</view>
+		</view>
+
+		<view class="colcenter list">
+			<!-- 问题卡片 -->
+			<view class="colstart listcard  solids-bottom">
+				<view class="card rowstart" style="width:100%;">
+          <text class="blackfont2" style="font-size:40rpx;width:70%">电脑中病毒了怎么办？</text>
+          <button class="cu-btn btn bg-blue light" style="width:28%" bindtap="writeanswer">写回答</button>
+				</view>
+			</view>
+		</view>
+
+    <view class="colcenter list">
+			<!-- 问题卡片 -->
+			<view class="colstart listcard  solids-bottom">
+				<view class="card rowstart" style="width:100%;">
+          <text class="blackfont2" style="font-size:40rpx;width:70%">鼠标总是不灵敏怎么办？</text>
+          <button class="cu-btn btn bg-blue light" style="width:28%" bindtap="writeanswer">写回答</button>
+				</view>
+			</view>
+		</view>
+
+    <view class="colcenter list">
+			<!-- 问题卡片 -->
+			<view class="colstart listcard  solids-bottom">
+				<view class="card rowstart" style="width:100%;">
+          <text class="blackfont2" style="font-size:40rpx;width:70%">有没有适合大一学生的经济型电脑推荐？</text>
+          <button class="cu-btn btn bg-blue light" style="width:28%" bindtap="writeanswer">写回答</button>
+				</view>
+			</view>
+		</view>
+
+	</view>
+</view>
+
+
