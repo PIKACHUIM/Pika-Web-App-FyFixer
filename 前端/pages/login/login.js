@@ -1,64 +1,47 @@
 Page({
 
-  /*页面的初始数据*/
+  /*---------------------------------------页面初始数据---------------------------------------*/
   data: {
     loginDataPnum:'',
     loginDataCode:'',
-    iscode:null,
+    LoginDataFlag: null,
     loginNameCode:'获取'
   },
+  /*---------------------------------------获取输入的值---------------------------------------*/
   //获取input输入框的值
-  loginGetPhoneValue:function(e) {
-    this.setData({
-      loginDataPnum:e.detail.value
-    })
-  },
-  getCodeValue:function(e) {
-    this.setData({
-      code:e.detail.value
-    })
-  },
+  loginGetPnumValue:function(e) {this.setData({loginDataPnum:e.detail.value})},
+  loginGetCodeValue:function(e) {this.setData({loginDataCode:e.detail.value})},
   getCode:function() {
-    var a = this.data.loginDataPnum;
-    var _this = this;
-    var myphone = /^(13[0-9]|14[0-9]|15[0-9]|16[0-9]|17[0-9]|18[0-9]|19[0-9])\d{8}$/
-    if (this.data.loginDataPnum == '') {
-      wx.showToast({
-        title: '手机号不能为空',
-        icon:'none',
-        duration:1500
-      })
-      return false;
-    }
-    else if (!myphone.test(this.data.loginDataPnum)) {
-      wx.showToast({
-        title: '请输入正确的手机号',
-        icon:'none',
-        duration:1500
-      })
-      return false;
-    }
+    var temp_pnum = this.data.loginDataPnum;
+    var temp_this = this;
+    var temp_rule = /^(13[0-9]|14[0-9]|15[0-9]|16[0-9]|17[0-9]|18[0-9]|19[0-9])\d{8}$/
+    if (this.data.loginDataPnum === '') {
+      wx.showToast({title: '手机号不能为空', icon:'none', duration:1500});return false;}
+    else if (!temp_rule.test(this.data.loginDataPnum)) {
+      wx.showToast({title: '手机号输入有误', icon:'none', duration:1500});return false;}
     else {
       wx.request({
-        data:{},
+        data:{
+          pnum:this.data.loginDataPnum,
+        },
         url: '接口地址',
         success(res) {
           console.log(res.data.data)
-          _this.setData({
-            iscode:res.data.data
+          temp_this.setData({
+            LoginDataFlag:res.data.data
           })
           var num = 61;
           var timer = setInterval(function() {
             num--;
             if (num <= 0) {
               clearInterval(timer);
-              _this.setData({
+              temp_this.setData({
                 codename:'重新发送',
                 disabled:false
               })
             }
             else {
-              _this.setData({
+              temp_this.setData({
                 codename:num + 's'
               })
             }
